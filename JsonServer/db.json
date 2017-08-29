@@ -1,0 +1,24 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Sachin Tendulkar",
+      "avatar": "http://p.imgci.com/db/PICTURES/CMS/128400/128483.1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Dravid",
+      "avatar": "http://p.imgci.com/db/PICTURES/CMS/108400/108439.1.jpg"
+    },
+    {
+      "name": "Rohit",
+      "avatar": "http://p.imgci.com/db/PICTURES/CMS/222900/222915.jpg",
+      "id": 3
+    },
+    {
+      "name": "Yuvraj",
+      "avatar": "http://p.imgci.com/db/PICTURES/CMS/222900/222915.jpg",
+      "id": 4
+    }
+  ]
+}

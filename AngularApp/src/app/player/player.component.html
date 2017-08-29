@@ -1,0 +1,32 @@
+<section>
+    <p>
+        This is a sample Text 1
+    </p>
+    <p>
+        This is a sample Text 2 and this is <span appMyHighlight> highlighted </span>
+    </p>
+    <p>
+        This is a sample Text 3
+    </p>
+    <h1>
+        Data Binding
+    </h1>
+    {{title}}
+    <br> The sum of 2 and 4 is {{2+4}}
+    <br> Is 2 greater than 3 : {{2>3}}
+    <br>
+    <!--<img [src]="imageSrc">-->
+
+    <button [disabled]="isDisabled" (click)="onButtonClick()">Click Me!</button>
+
+
+    <hr>
+
+    <ul>
+        <li *ngFor="let player of players"> {{player.name}}</li>
+
+    </ul>
+    The value in the component is {{inputValue}}
+    <br>
+    <input type="text" [(ngModel)]="inputValue">
+</section>

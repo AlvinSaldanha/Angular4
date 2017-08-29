@@ -1,0 +1,17 @@
+{
+  "name": "slkangular",
+  "version": "1.2.3",
+  "description": "Angular Training",
+  "main": "1.Node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "underscore": "^1.8.3"
+  }
+}

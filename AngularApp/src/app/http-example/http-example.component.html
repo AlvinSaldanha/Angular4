@@ -1,0 +1,11 @@
+<section>
+  <div *ngFor="let player of players">
+    <img [src]=player.avatar >
+    {{player.name}}
+  </div>
+
+
+  <input type="text" [(ngModel)]="playerName">
+  <input type="text" [(ngModel)]="playerAvatar">
+  <button (click)="addPlayer()">Add Player</button>
+</section>

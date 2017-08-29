@@ -1,0 +1,9 @@
+<section>
+<h1>Child Component</h1>
+<hr>
+<input type="text" #childInput>
+<button (click)="fireChildChangeEvent(childInput.value)">Click Me!</button>
+<h1>
+  <label>The data from the parent Component is {{parentValue}}</label>
+</h1>
+</section>

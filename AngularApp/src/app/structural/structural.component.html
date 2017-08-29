@@ -1,0 +1,34 @@
+<p>
+  structural works!
+</p>
+<input [(ngModel)]="inputValue">
+<div *ngIf="inputValue == 'India'">
+  This is some text
+</div>
+
+<div [ngSwitch]="inputValue">
+  <ng-template ngSwitchCase="India" style="background-color:blue">
+    India's Div
+  </ng-template>
+  <ng-template ngSwitchCase="Pakistan" style="background-color:blue">
+    Pakistan's Div
+  </ng-template>
+  <ng-template ngSwitchDefault style="background-color:gray">
+    No Country entered
+  </ng-template>
+</div>
+
+<input [(ngModel)]="username">
+<div *ngIf="username;else login">
+  Welcome {{username}}
+</div>
+<ng-template #login>
+  Please Login.
+</ng-template>
+
+<hr> The Player name is {{players?.player?.name}}
+
+<div [ngClass]="getClass()">This is a ngClass example</div>
+<button (click)="toggleButton()">{{isActive==true?'Deactivate':'Activate'}}</button>
+
+<div [ngStyle]="getStyle()">This is a ngStyle example</div>

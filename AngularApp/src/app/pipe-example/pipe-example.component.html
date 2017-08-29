@@ -1,0 +1,41 @@
+<section>
+
+
+  <table>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Handed</th>
+    <tr *ngFor="let player of players|handed:selectHanded">
+      <td [innerHTML]=player.firstName ></td>
+      <td>{{player.lastName}}</td>
+      <td>{{player.handed}}</td>
+    </tr>
+  </table>
+  <br>
+
+  <select [(ngModel)]="selectHanded">
+    <option>right</option>
+    <option>left</option>
+    <option>both</option>
+  </select>
+<hr>
+  <h1>json Pipe</h1>
+  <hr> {{player|json}}
+  <h1>Uppercase Pipe</h1>
+  <hr> {{player.firstName|uppercase}}
+
+  <h1>Lowercase Pipe</h1>
+  <hr> {{player.firstName|lowercase}}
+
+  <h1>Title Pipe</h1>
+  <hr> {{player.firstName|titlecase}}
+
+  <h1>Currency Pipe</h1>
+  <hr> {{player.Salary|currency:'INR':true}}
+
+  <h1>Number Pipe</h1>
+  <hr> {{player.Average|number:'1.1-2'}}
+
+
+
+</section>

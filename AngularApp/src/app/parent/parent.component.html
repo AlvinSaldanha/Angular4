@@ -1,0 +1,13 @@
+<section>
+  <h1>Parent Component</h1>
+  <hr>
+  <input type="text" [(ngModel)]="parentValue">
+  <button>Click Me!</button>
+<br>
+  <label>The data from the child Component is {{childValue}}</label>
+
+  <hr>
+  <app-child #childComponent [parentValue]="parentValue" (childValueChange)="setChildValue($event)"></app-child>
+  <hr>
+<button (click)="childComponent.CallReferenceMethod('data from Parent')">Call Child Function From Reference Variable</button>
+</section>
